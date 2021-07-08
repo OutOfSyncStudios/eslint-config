@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/OutOfSyncStudios/eslint-config-ooss.git"
   },
-  "author": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Jay Reardon",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/OutOfSyncStudios/eslint-config-ooss/issues"
