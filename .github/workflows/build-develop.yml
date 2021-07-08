@@ -36,7 +36,6 @@ jobs:
       - name: 'NPM Test'
         shell: bash
         run: |
-          npm install -g gulp-cli gulp@4
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
           npm config set registry http://registry.npmjs.org
           npm config set always-auth true
@@ -44,11 +43,8 @@ jobs:
           sudo chown -R $USER:$GROUP ~/.npm || true
           sudo chown -R $USER:$GROUP ~/.config || true
           npm ci
-          gulp
-          npm run coverage
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          CODACY_PROJECT_TOKEN:  ${{ secrets.CODACY_PROJECT_TOKEN }}
 
       - name: Notify slack success
         if: success()
