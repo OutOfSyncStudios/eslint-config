@@ -1,6 +1,6 @@
 {
-  "name": "@outofsync/eslint-config-ooss",
-  "version": "1.0.0",
+  "name": "@outofsyncstudios/eslint-config",
+  "version": "1.0.1",
   "description": "Eslint Configuration for OOSS",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OutOfSyncStudios/eslint-config-ooss.git"
+    "url": "git+https://github.com/OutOfSyncStudios/eslint-config.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "restricted",
+    "registry":"https://npm.pkg.github.com"
   },
   "author": "Jay Reardon",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/OutOfSyncStudios/eslint-config-ooss/issues"
+    "url": "https://github.com/OutOfSyncStudios/eslint-config/issues"
   },
-  "homepage": "https://github.com/OutOfSyncStudios/eslint-config-ooss#readme",
+  "homepage": "https://github.com/OutOfSyncStudios/eslint-config#readme",
   "dependencies": {
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",

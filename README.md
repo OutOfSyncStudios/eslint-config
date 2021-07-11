@@ -4,11 +4,11 @@ This is the Out of Sync Studios eslint common configuration for multiple Node de
 
 ## Installation
 ```shell
-$ npm install @outofsync/eslint-config-ooss
+$ npm install @outofsyncstudios/eslint-config-ooss
 ```
 or
 ```shell
-$ yarn add @outofsync/eslint-config-ooss
+$ yarn add @outofsyncstudios/eslint-config-ooss
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ This eslint config plugin provides a common environment and one extension for fr
 To use this plugin install module as noted above and then edit the `.eslintrc.json` file in the root of your project to look like below.
 ```json
 {
-  "extends": "@outofsync/eslint-config-ooss",
+  "extends": "@outofsyncstudios/eslint-config",
   "rules": {
     ...
   }
@@ -29,8 +29,8 @@ You can also specify to add the front-end extensions as follows:
 ```json
 {
   "extends": [
-    "@outofsync/eslint-config-ooss",
-    "@outofsync/eslint-config-ooss/frontend-extension"
+    "@outofsyncstudios/eslint-config",
+    "@outofsyncstudios/eslint-config/frontend-extension"
   ],
   "rules": {
     ...
