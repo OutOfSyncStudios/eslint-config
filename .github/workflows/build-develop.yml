@@ -37,7 +37,7 @@ jobs:
         shell: bash
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secret.GITHUB_TOKEN }}" >> ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
           npm config set always-auth true
           sudo mkdir ~/.npm || true
           sudo chown -R $USER:$GROUP ~/.npm || true
